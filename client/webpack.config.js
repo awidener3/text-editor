@@ -36,8 +36,8 @@ module.exports = () => {
 						destination: path.join('assets', 'icons'),
 					},
 				],
-				// ! causing issues with manifest losing fingerprint
-				fingerprints: false,
+				// ! causing issues with manifest losing fingerprint when set to false
+				fingerprints: true,
 			}),
 			new InjectManifest({
 				swSrc: './src-sw.js',
