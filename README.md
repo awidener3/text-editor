@@ -1,4 +1,6 @@
-![J.A.T.E. Logo](images/logo.png)
+<p align="center">
+  <img src="images/logo.png">
+</p>
 
 # 📝 Homework #11: Text Editor (J.A.T.E.)
 
