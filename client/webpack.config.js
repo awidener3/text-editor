@@ -25,10 +25,13 @@ module.exports = () => {
 				name: 'JATE',
 				short_name: 'JATE',
 				description: 'Just Another Text Editor',
+				display: 'standalone',
 				background_color: '#1e1e1e',
 				theme_color: '#1e1e1e',
 				start_url: '/',
 				publicPath: '/',
+				fingerprints: false,
+				inject: true,
 				icons: [
 					{
 						src: path.resolve('src/images/logo.png'),
@@ -36,8 +39,6 @@ module.exports = () => {
 						destination: path.join('assets', 'icons'),
 					},
 				],
-				// ! causing issues with manifest losing fingerprint when set to false
-				fingerprints: true,
 			}),
 			new InjectManifest({
 				swSrc: './src-sw.js',
